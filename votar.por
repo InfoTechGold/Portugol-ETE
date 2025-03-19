@@ -1,15 +1,27 @@
 programa
 {
+
+	inteiro ano_nascimento , ano_atual , idade
+
 	
 	funcao inicio()
 	{
-		real numero1, numero2, somar
+		//pode votar ou não
 
-		numero1 = 10.0
-		numero2 = 3.1
-		somar = numero1 + numero2
+		escreva("digite o ano que você nasceu\n")
+		leia(ano_nascimento)
+		escreva("digite o ano atual que você está\n")
+		leia(ano_atual)
 
-		escreva("A Soma dos Dois Números é : " + somar)
+
+		idade=ano_atual - ano_nascimento
+
+		se(idade>=16){
+			escreva("você pode votar")
+		}
+		senao{
+			escreva("você não pode votar")
+		}
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -17,7 +29,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 181; 
+ * @POSICAO-CURSOR = 381; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

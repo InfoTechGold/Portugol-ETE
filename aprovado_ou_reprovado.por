@@ -1,15 +1,25 @@
 programa
 {
-	
+	cadeia nome
+	real nota1, nota2 , media
 	funcao inicio()
 	{
-		real numero1, numero2, somar
+		escreva("digite o seu nome\n")
+		leia(nome)
+		escreva("digite a sua primeira nota\n")
+		leia(nota1)
+		escreva("digite a sua segunda nota\n")
+		leia(nota2)
 
-		numero1 = 10.0
-		numero2 = 3.1
-		somar = numero1 + numero2
+		media=(nota1 + nota2)/2
 
-		escreva("A Soma dos Dois Números é : " + somar)
+		se(media>=7){
+			escreva("você foi aprovado")
+		}
+		senao{
+			escreva("você não foi aprovado")
+		}
+		
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -17,7 +27,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 181; 
+ * @POSICAO-CURSOR = 216; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

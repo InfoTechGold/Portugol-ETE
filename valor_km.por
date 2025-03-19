@@ -1,15 +1,24 @@
 programa
 {
+	real km , valor_pagar , valor1 , valor2 , distancia
 	
 	funcao inicio()
 	{
-		real numero1, numero2, somar
-
-		numero1 = 10.0
-		numero2 = 3.1
-		somar = numero1 + numero2
-
-		escreva("A Soma dos Dois Números é : " + somar)
+		escreva("digite a quantidade de km que vai percorrer\n")
+		leia(km)
+	
+		valor1=0.50
+		valor2=0.45
+		distancia=200.0
+			
+		se(km<=distancia){
+			valor_pagar= km * valor1
+			escreva("você vai pagar R$: " + valor_pagar)
+		}
+		senao{
+			valor_pagar= km * valor2
+			escreva("você vai pagar R$: " + valor_pagar)
+		}
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -17,7 +26,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 181; 
+ * @POSICAO-CURSOR = 147; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
